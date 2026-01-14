@@ -264,7 +264,7 @@ namespace SwiftHohenbergSolver
       // for the x sine sum, but we use ((arctan(y, z) - pi)/pi)*6*pi for the y sine sum. This wraps the psuedorandom function around the cylinder
       // so that we can compare it to the same initial conditions on the plane. This function will run for the torus and sphere, but it has not been
       // implemented to be comparable to the plane.
-      // virtual double value(const Point<spacedim> &p, const unsigned int component) const override;
+      virtual double value(const Point<spacedim> &p, const unsigned int component) const override;
   };
 
   // Places a small hot spot in the center of the plane on the u solution, and set v to a large number. p is the input point. component determines whether the input is for u or v. The function returns the value of the initial solution at the point
